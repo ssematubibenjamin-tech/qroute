@@ -1,0 +1,38 @@
+name: qroute
+description: Q-Route — Route-to-Market Sales CRM for FMCG distributors in Uganda.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Deep links (WhatsApp receipts)
+  url_launcher: ^6.2.5
+
+  # Geolocation (GPS tagging)
+  geolocator: ^11.0.0
+
+  # Supabase backend (auth, database, realtime)
+  supabase_flutter: ^2.3.4
+
+  # State management — swap for riverpod if preferred
+  flutter_bloc: ^8.1.4
+
+  # UUID generation for receipt numbers
+  uuid: ^4.3.3
+
+  # Local offline cache (SQLite)
+  sqflite: ^2.3.2
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
